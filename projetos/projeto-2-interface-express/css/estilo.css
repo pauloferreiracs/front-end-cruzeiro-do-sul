@@ -1,0 +1,238 @@
+/* ==================================================
+   Projeto 2 - Interface Express | SyphraX
+   Paleta de cores (4 cores):
+   #0b1020 - azul bem escuro (topo, rodapé e textos)
+   #ffffff - branco
+   #eef0f5 - cinza claro (fundo da página e campos)
+   #6a4cf0 - roxo (cor de destaque)
+   ================================================== */
+
+/* Faz a largura incluir o padding e a borda (fica mais fácil de calcular) */
+* {
+  box-sizing: border-box;
+}
+
+/* ---------- Seletores de elementos ---------- */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #0b1020;
+  background-color: #eef0f5;
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+/* ---------- Cabeçalho (Flexbox) ---------- */
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #0b1020;
+  color: #ffffff;
+}
+
+.logo {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.slogan {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* ---------- Menu (Flexbox) ---------- */
+
+.menu {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Seletor hierárquico: só os links que estão dentro do .menu */
+.menu a {
+  display: block;
+  padding: 8px 16px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #6a4cf0;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover,
+.menu a:focus {
+  background-color: #6a4cf0;
+}
+
+/* ---------- Área principal ---------- */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* ---------- Seção de apresentação ---------- */
+
+.apresentacao {
+  padding: 60px 40px;
+  border-radius: 16px;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0b1020, #6a4cf0);
+}
+
+/* clamp(): o título cresce e diminui conforme a largura da tela */
+.apresentacao h2 {
+  margin-bottom: 10px;
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+}
+
+.apresentacao p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+/* ---------- Botão (usado na apresentação e no formulário) ---------- */
+
+.botao {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  background-color: #6a4cf0;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao:hover,
+.botao:focus {
+  background-color: #0b1020;
+  transform: translateY(-3px);
+}
+
+/* ---------- Cards (Grid) ---------- */
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  padding: 24px;
+  background-color: #ffffff;
+  border-top: 5px solid #6a4cf0;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(11, 16, 32, 0.15);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #6a4cf0;
+}
+
+/* ---------- Contato e formulário ---------- */
+
+/* Seletor de id */
+#contato {
+  text-align: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 20px auto 0;
+  padding: 30px;
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+label {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: #eef0f5;
+  border: 2px solid #eef0f5;
+  border-radius: 8px;
+}
+
+/* Campo selecionado ganha borda roxa */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #6a4cf0;
+  background-color: #ffffff;
+}
+
+.formulario .botao {
+  margin-top: 20px;
+}
+
+/* ---------- Rodapé ---------- */
+
+.rodape {
+  padding: 20px;
+  text-align: center;
+  background-color: #0b1020;
+  color: #ffffff;
+}
+
+.rodape p {
+  margin: 5px 0;
+}
+
+/* ---------- Responsividade: telas até 768px (celular/tablet) ---------- */
+
+@media (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .apresentacao {
+    padding: 40px 20px;
+  }
+
+  .formulario {
+    padding: 20px;
+  }
+}

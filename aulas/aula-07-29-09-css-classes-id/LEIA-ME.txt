@@ -1,0 +1,7 @@
+AULA 07 — RECONSTRUÇÃO
+
+Abra exemplo-de-aula02-noticia.html para ver o portal principal.
+O link "Classes e IDs" abre o segundo exercício.
+
+Os arquivos HTML e CSS estão na mesma pasta e funcionam sem internet,
+instalação de programas ou bibliotecas externas.

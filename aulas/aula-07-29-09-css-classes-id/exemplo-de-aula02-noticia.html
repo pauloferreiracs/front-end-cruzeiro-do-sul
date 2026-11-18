@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal pessoal de estudos e prática de front-end.">
+    <title>Meu laboratório de front-end | Aula 07</title>
+    <link rel="stylesheet" href="style02.css">
+</head>
+<body>
+    <div id="principal">
+        <header id="topo_geral">
+            <div class="topo-linha">
+                <a class="marca" href="#inicio">ML<span>.</span> Laboratório</a>
+                <span class="edicao">Aula 07 · HTML + CSS</span>
+            </div>
+            <div class="apresentacao" id="inicio">
+                <h1>Meu laboratório de front-end</h1>
+                <p>Um espaço para registrar ideias, testar estilos e aprender construindo.</p>
+            </div>
+        </header>
+
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#anotacoes">Anotações</a></li>
+                <li><a href="#roteiro">Roteiro</a></li>
+                <li><a href="exemplo-de-aula01-classeid.html">Classes e IDs ↗</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <article id="anotacoes">
+                <header class="artigo-cabecalho">
+                    <p class="categoria">Diário de estudos</p>
+                    <h2>A prática começa no código</h2>
+                    <p class="data">29 de setembro de 2026 · Projeto da Aula 07</p>
+                </header>
+
+                <section class="texto-artigo" aria-label="Texto do artigo">
+                    <p><strong>Bem-vindo ao meu espaço de estudos.</strong> Criei esta página para acompanhar minha evolução em front-end e transformar os conceitos vistos em aula em algo que eu possa abrir, observar e melhorar.</p>
+                    <p>Nesta etapa, estou trabalhando com a estrutura do <em>HTML</em> e a apresentação do <em>CSS</em>. Elementos como cabeçalho, menu, artigo e seções ajudam a organizar a informação; cores, espaçamento e tipografia dão personalidade ao resultado.</p>
+                    <p>O próximo passo é continuar experimentando. Cada exercício é uma oportunidade de testar uma ideia, perceber o que funciona e deixar a próxima versão mais clara do que a anterior.</p>
+                </section>
+            </article>
+
+            <aside id="roteiro" aria-labelledby="roteiro-titulo">
+                <h2 id="roteiro-titulo">Nesta aula</h2>
+                <p>Conceitos presentes nesta página:</p>
+                <ul>
+                    <li>Estrutura semântica</li>
+                    <li>Classes e identificadores</li>
+                    <li>Seletores CSS</li>
+                    <li>Layout responsivo</li>
+                </ul>
+                <a href="exemplo-de-aula01-classeid.html">Ver exemplo de classe e ID <span aria-hidden="true">→</span></a>
+            </aside>
+        </main>
+
+        <footer>
+            <span>Meu laboratório de front-end</span>
+            <span>Feito para a Aula 07</span>
+        </footer>
+    </div>
+</body>
+</html>

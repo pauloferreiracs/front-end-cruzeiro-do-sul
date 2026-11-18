@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paulo Ferreira | Minha identidade na Web</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <h1>Paulo Ferreira</h1>
+    <p>Aprendendo programação e transformando ideias em projetos.</p>
+  </header>
+
+  <nav aria-label="Navegação principal">
+    <a href="#apresentacao">Apresentação</a>
+    <a href="#sobre">Sobre mim</a>
+    <a href="#interesses">Interesses</a>
+    <a href="#estudos">Estudos</a>
+    <a href="#contato">Contato</a>
+    <a href="paginas/interesses.html">Página complementar</a>
+  </nav>
+
+  <main>
+    <section id="apresentacao">
+      <h2>Olá, eu sou o Paulo</h2>
+      <p>Estou começando minha jornada na programação e estudo engenharia de IA complexa. Quero entender os fundamentos para criar, orientar melhor as ferramentas e também resolver problemas por conta própria.</p>
+      <figure class="foto-pessoal">
+        <img class="retrato" src="imagens/paulo-ferreira.jpeg" alt="Paulo Ferreira sentado em um banco ao ar livre" width="3120" height="4160">
+        <figcaption>Foto pessoal de Paulo Ferreira.</figcaption>
+      </figure>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <p>Escolhi o curso porque ele tinha ligação com computadores, mesmo sem conhecer a área quando comecei. Hoje estudo engenharia de IA complexa: uso IA para me ajudar a programar, mas quero aprender o básico para dar boas instruções, compreender as soluções e saber agir sozinho quando for necessário.</p>
+    </section>
+
+    <section id="interesses">
+      <h2>Interesses e objetivos</h2>
+      <h3>O que desperta meu interesse</h3>
+      <ul>
+        <li>Engenharia de IA complexa</li>
+        <li>Empreendedorismo</li>
+        <li>Soluções digitais para negócios locais</li>
+      </ul>
+      <h3>O que quero aprender</h3>
+      <ol>
+        <li>Aprender a estrutura básica de uma página em HTML.</li>
+        <li>Usar CSS básico para organizar a aparência de um site.</li>
+        <li>Entender o código o suficiente para resolver problemas sem depender sempre da IA.</li>
+      </ol>
+      <p>Na <a href="paginas/interesses.html">página complementar</a>, conto mais sobre um interesse ou projeto.</p>
+    </section>
+
+    <section id="estudos">
+      <h2>Minha aprendizagem</h2>
+      <p>Esta tabela mostra onde estou agora e meus próximos passos.</p>
+      <div class="tabela-rolagem">
+        <table>
+          <caption>Plano de estudos em desenvolvimento web</caption>
+          <thead>
+            <tr>
+              <th scope="col">Tema</th>
+              <th scope="col">Conhecimento atual</th>
+              <th scope="col">Próximo passo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">HTML</th>
+              <td>Iniciante: estou conhecendo a estrutura, os títulos e os links.</td>
+              <td>Praticar páginas com HTML semântico.</td>
+            </tr>
+            <tr>
+              <th scope="row">CSS</th>
+              <td>Iniciante: estou experimentando cores e espaçamentos.</td>
+              <td>Deixar as páginas legíveis em telas diferentes.</td>
+            </tr>
+            <tr>
+              <th scope="row">Acessibilidade</th>
+              <td>Estou conhecendo o uso de textos alternativos e rótulos.</td>
+              <td>Revisar a navegação por teclado e a clareza do conteúdo.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Para continuar estudando, consulto a <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">documentação de HTML da MDN</a> e a <a href="https://www.w3.org/WAI/tutorials/">coleção de tutoriais de acessibilidade da W3C</a>.</p>
+    </section>
+
+    <section id="midia">
+      <h2>Um som da minha rotina de estudos</h2>
+      <p>Esta narração apresenta o processo de aprender HTML e testar este primeiro site. Foi criada para acompanhar o tema da página.</p>
+      <audio controls preload="metadata">
+        <source src="midias/rotina-de-estudos.wav" type="audio/wav">
+        Seu navegador não oferece suporte à reprodução de áudio.
+      </audio>
+      <p><strong>Transcrição:</strong> Esta página apresenta minha trajetória de aprendizagem. Estou conhecendo a estrutura do HTML e construindo meu primeiro site pessoal. Ao testar cada página, aprendo a organizar o conteúdo e a tornar a navegação mais clara.</p>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Formulário demonstrativo - os dados não serão enviados.</p>
+      <form>
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" required>
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button type="button">Enviar (demonstração)</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto 1 - Desenvolvimento Front-End para Web. <a href="#apresentacao">Voltar ao início</a>.</p>
+  </footer>
+</body>
+</html>

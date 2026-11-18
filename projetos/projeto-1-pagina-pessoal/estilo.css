@@ -1,0 +1,159 @@
+/* CSS básico: cores, fontes, margens, espaçamento e bordas. */
+
+body {
+  margin: 0;
+  background: #eef3f9;
+  color: #111827;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+header, main, footer {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header {
+  margin-top: 24px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  background: #0b1d38;
+  color: #ffffff;
+}
+
+nav {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  background: #ffffff;
+  border-bottom: 2px solid #2262a7;
+}
+
+nav a {
+  display: inline-block;
+  margin: 4px 18px 4px 0;
+}
+
+main {
+  padding-top: 8px;
+}
+
+section {
+  margin: 22px 0;
+  padding: 18px 22px;
+  background: #ffffff;
+  border-left: 4px solid #2262a7;
+}
+
+h1, h2 {
+  line-height: 1.25;
+}
+
+h1 {
+  margin-bottom: 8px;
+  color: #0b1d38;
+}
+
+header h1 {
+  color: #ffffff;
+}
+
+h2 {
+  margin-top: 0;
+  color: #0b1d38;
+}
+
+a {
+  color: #14589d;
+}
+
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 3px solid #f0a842;
+  outline-offset: 3px;
+}
+
+figure {
+  margin: 20px 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption, small {
+  color: #46566c;
+}
+
+.retrato {
+  width: 340px;
+  border-radius: 12px;
+}
+
+.foto-pessoal {
+  text-align: center;
+}
+
+.ilustracao {
+  width: 580px;
+}
+
+.tabela-rolagem {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #b9c7d8;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #e7f0fb;
+}
+
+label {
+  display: block;
+  margin-top: 14px;
+  font-weight: bold;
+}
+
+input, textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 560px;
+  padding: 9px;
+  border: 1px solid #899bb1;
+  border-radius: 4px;
+  font: inherit;
+}
+
+button {
+  margin-top: 16px;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 4px;
+  background: #0b1d38;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+audio {
+  display: block;
+  max-width: 100%;
+  margin-top: 12px;
+}
+
+footer {
+  padding-top: 0;
+  padding-bottom: 42px;
+}

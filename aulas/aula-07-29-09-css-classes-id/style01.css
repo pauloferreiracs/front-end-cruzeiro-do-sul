@@ -1,0 +1,77 @@
+:root {
+    color-scheme: dark;
+    --fundo: #081827;
+    --superficie: #102b41;
+    --texto: #effbff;
+    --secundario: #b8d4df;
+    --destaque: #5de0e5;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.pagina { width: min(1080px, calc(100% - 40px)); margin: auto; }
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    border-bottom: 1px solid #345467;
+}
+
+.voltar { color: var(--destaque); text-decoration: none; font-weight: 700; }
+.voltar:hover { text-decoration: underline; text-underline-offset: 4px; }
+.aula { color: var(--secundario); font-size: .9rem; }
+
+h1, h2 { font-family: Georgia, "Times New Roman", serif; line-height: 1.15; }
+h1 { max-width: 720px; margin: 58px 0 18px; font-size: clamp(2.6rem, 6vw, 4.7rem); }
+h2 { margin: 0 0 12px; font-size: 1.45rem; }
+.introducao { max-width: 68ch; margin: 0 0 42px; color: var(--secundario); font-size: 1.1rem; }
+
+.grade { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.exemplo { min-width: 0; padding: 26px; background: var(--superficie); border-radius: 14px; }
+.exemplo p { min-height: 6em; margin: 0 0 24px; color: var(--secundario); }
+code { padding: 2px 5px; border-radius: 4px; background: #1d4055; color: #a5f3f5; }
+
+.caixa {
+    display: block;
+    margin-top: 12px;
+    padding: 14px 16px;
+    border: 1px solid var(--destaque);
+    border-radius: 8px;
+    background: #163e51;
+    color: var(--texto);
+}
+
+#aviso {
+    display: flex;
+    align-items: center;
+    min-height: 120px;
+    background: var(--destaque);
+    color: #052331;
+    font-weight: 700;
+}
+
+footer { margin-top: 64px; padding: 24px 0 36px; border-top: 1px solid #345467; color: var(--secundario); font-size: .9rem; }
+:focus-visible { outline: 3px solid var(--destaque); outline-offset: 4px; }
+::selection { background: var(--destaque); color: #052331; }
+
+@media (max-width: 820px) {
+    .grade { grid-template-columns: 1fr; }
+    .exemplo p { min-height: 0; }
+}
+
+@media (max-width: 460px) {
+    .cabecalho { align-items: flex-start; flex-direction: column; gap: 8px; }
+    h1 { margin-top: 40px; }
+}

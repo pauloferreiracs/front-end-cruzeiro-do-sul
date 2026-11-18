@@ -1,0 +1,8 @@
+/* Ajuste leve: o Bootstrap faz quase tudo. Só um efeito ao passar o mouse nos cards. */
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}

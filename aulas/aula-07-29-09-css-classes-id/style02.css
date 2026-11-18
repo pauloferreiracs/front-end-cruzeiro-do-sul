@@ -1,0 +1,67 @@
+:root {
+    color-scheme: dark;
+    --fundo: #071827;
+    --superficie: #0d283c;
+    --superficie-clara: #12364b;
+    --texto: #f0fbff;
+    --secundario: #bed6df;
+    --ciano: #5de0e5;
+    --linha: #365568;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--fundo); color: var(--texto); font-family: "Segoe UI", Arial, sans-serif; line-height: 1.65; }
+
+#principal { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
+
+#topo_geral { padding-top: 26px; }
+.topo-linha { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.marca { color: var(--texto); font-size: 1.1rem; font-weight: 800; letter-spacing: -.02em; text-decoration: none; }
+.marca span { color: var(--ciano); }
+.edicao { color: var(--secundario); font-size: .88rem; }
+.apresentacao { max-width: 810px; padding: 94px 0 84px; }
+h1, h2 { font-family: Georgia, "Times New Roman", serif; line-height: 1.1; letter-spacing: -.025em; }
+h1 { margin: 0 0 24px; font-size: clamp(3rem, 7vw, 5.5rem); }
+.apresentacao p { max-width: 55ch; margin: 0; color: var(--secundario); font-size: clamp(1.1rem, 2vw, 1.35rem); }
+
+nav { border-top: 1px solid var(--linha); border-bottom: 1px solid var(--linha); }
+nav ul { display: flex; flex-wrap: wrap; gap: 8px 26px; margin: 0; padding: 12px 0; list-style: none; }
+nav a { display: inline-block; padding: 8px 0; color: var(--secundario); text-decoration: none; font-weight: 600; }
+nav a:hover, nav a:focus-visible { color: var(--ciano); }
+
+main { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: clamp(44px, 8vw, 112px); padding: 72px 0 100px; }
+.categoria { margin: 0 0 15px; color: var(--ciano); font-size: .85rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.artigo-cabecalho h2 { max-width: 650px; margin: 0 0 17px; font-size: clamp(2.3rem, 4.5vw, 3.7rem); }
+.data { margin: 0 0 34px; color: var(--secundario); font-size: .9rem; }
+.texto-artigo { max-width: 68ch; }
+.texto-artigo p { margin: 0 0 22px; font-size: 1.04rem; }
+.texto-artigo strong { color: var(--ciano); }
+.texto-artigo em { font-style: normal; text-decoration: underline; text-decoration-color: var(--ciano); text-underline-offset: 4px; }
+
+aside { align-self: start; padding: 26px; background: var(--superficie); border-radius: 14px; }
+aside h2 { margin: 0 0 12px; font-size: 1.6rem; }
+aside p { margin: 0 0 16px; color: var(--secundario); font-size: .95rem; }
+aside ul { margin: 0 0 25px; padding: 0; list-style: none; }
+aside li { padding: 10px 0; border-bottom: 1px solid var(--linha); }
+aside li::before { content: ""; display: inline-block; width: 7px; height: 7px; margin: 0 11px 2px 0; border-radius: 50%; background: var(--ciano); }
+aside a { display: block; padding: 12px 14px; border-radius: 7px; background: var(--ciano); color: #052430; font-size: .93rem; font-weight: 800; line-height: 1.35; text-decoration: none; }
+aside a:hover { background: #a1f4f5; }
+aside a span { white-space: nowrap; }
+
+footer { display: flex; justify-content: space-between; gap: 12px; padding: 25px 0 35px; border-top: 1px solid var(--linha); color: var(--secundario); font-size: .9rem; }
+:focus-visible { outline: 3px solid var(--ciano); outline-offset: 4px; }
+::selection { background: var(--ciano); color: #052430; }
+
+@media (max-width: 760px) {
+    .apresentacao { padding: 68px 0 60px; }
+    main { grid-template-columns: 1fr; gap: 35px; padding: 50px 0 70px; }
+    aside { max-width: 480px; }
+}
+
+@media (max-width: 480px) {
+    .topo-linha, footer { align-items: flex-start; flex-direction: column; }
+    .apresentacao { padding: 55px 0; }
+    nav ul { gap: 0 18px; }
+    nav a { font-size: .9rem; }
+}

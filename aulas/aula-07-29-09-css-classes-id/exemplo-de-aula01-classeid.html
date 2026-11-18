@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Demonstração prática de classes e identificadores em HTML e CSS.">
+    <title>Classes e IDs na prática | Meu laboratório</title>
+    <link rel="stylesheet" href="style01.css">
+</head>
+<body>
+    <div class="pagina">
+        <header class="cabecalho">
+            <a class="voltar" href="exemplo-de-aula02-noticia.html">← Voltar ao portal</a>
+            <span class="aula">Front-end · Aula 07</span>
+        </header>
+
+        <main>
+            <h1>Classes e IDs na prática</h1>
+            <p class="introducao">Uma classe pode aparecer em vários elementos. Um ID identifica um elemento específico da página. Veja a diferença nos exemplos abaixo.</p>
+
+            <section class="grade" aria-label="Exemplos de classe e identificador">
+                <div class="exemplo">
+                    <h2>Elemento comum</h2>
+                    <p>Esta <code>div</code> não recebe a classe <code>caixa</code> nem o ID <code>aviso</code>.</p>
+                    <div>Sou uma div sem a formatação da classe.</div>
+                </div>
+
+                <div class="exemplo">
+                    <h2>Classe reutilizada</h2>
+                    <p>A regra <code>.caixa</code> define o mesmo estilo para elementos diferentes.</p>
+                    <div class="caixa">Sou uma div com a classe caixa.</div>
+                    <span class="caixa">Sou um span com a mesma classe.</span>
+                </div>
+
+                <div class="exemplo exemplo-aviso">
+                    <h2>ID específico</h2>
+                    <p>O seletor <code>#aviso</code> acrescenta um destaque só a este elemento.</p>
+                    <div class="caixa" id="aviso">Tenho a classe caixa e o ID aviso.</div>
+                </div>
+            </section>
+        </main>
+
+        <footer>Exercício de HTML e CSS · Aula 07</footer>
+    </div>
+</body>
+</html>

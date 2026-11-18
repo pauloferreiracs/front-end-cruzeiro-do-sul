@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo com Flexbox</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+        header, footer {
+            background-color: #243447;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            list-style: none;
+            padding: 12px;
+            margin: 0;
+            background-color: #dce6f0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #243447;
+            font-weight: bold;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px;
+        }
+        section {
+            flex: 1 1 300px;
+            background-color: white;
+            border: 1px solid #c7d1dc;
+            border-radius: 8px;
+            padding: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portal de Tecnologia</h1>
+        <p>Exemplo de organização usando Flexbox</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#js">JavaScript</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="html">
+            <h2>HTML</h2>
+            <p>Define a estrutura e o conteúdo da página.</p>
+        </section>
+
+        <section id="css">
+            <h2>CSS</h2>
+            <p>Controla cores, fontes, tamanhos e posicionamento dos elementos.</p>
+        </section>
+
+        <section id="js">
+            <h2>JavaScript</h2>
+            <p>Adiciona interatividade e comportamento à página.</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Esta seção demonstra mais um bloco flexível dentro do conteúdo.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvimento Web — 2026</p>
+    </footer>
+</body>
+</html>

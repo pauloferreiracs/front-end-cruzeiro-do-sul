@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio em HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f7f4ea;
+            padding: 40px;
+        }
+        audio { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de áudio em HTML</h1>
+    <p>A tag audio permite adicionar controles para reproduzir um arquivo de som.</p>
+    <audio id="meuAudio" controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script>
+        const audio = document.getElementById("meuAudio");
+
+        audio.addEventListener("play", function () {
+            console.log("O áudio começou a tocar.");
+        });
+
+        audio.addEventListener("pause", function () {
+            console.log("O áudio foi pausado.");
+        });
+    </script>
+</body>
+</html>
